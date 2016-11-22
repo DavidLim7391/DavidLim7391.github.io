@@ -12,24 +12,52 @@
 				font-size:40px;
 				color:Black;
 			}
+			
+			
+			ul.tab {
+    			list-style-type: none;
+    			margin: 0;
+    			padding: 0;
+    			overflow: hidden;
+    			border: 1px solid #ccc;
+    			background-color: #f1f1f1;
+			}
+			ul.tab li {float: left;}
+			ul.tab li a {
+    			display: inline-block;
+    			color: black;
+    			text-align: center;
+    			padding: 14px 16px;
+    			text-decoration: none;
+    			transition: 0.3s;
+    			font-size: 17px;
+			}
+			ul.tab li a:hover {background-color: Orange;}
+			ul.tab li a:focus, .active {background-color: black;}
+			.tabcontent {
+    			display: none;
+    			padding: 6px 12px;
+    			border: 1px solid #ccc;
+    			border-top: none;
+			}
 		</style>
 	</head>
-	<body>`
+	<body>
 		<ul class="tab">
 			<li>
-				<a href="index.html" class=directions>Home</a>
+				<a href="index.html" class=index.html>Home</a>
 			</li>
 			<li>
-				<a href="portfolio.html" class=directions>Portfolio</a>
+				<a href="portfolio.html" class=tablinks>Portfolio</a>
 			</li>
 			<li>
-				<a href="special.html" class=directions>Special</a>
+				<a href="special.html" class=tablinks>Special</a>
 			</li>
 			<li>
-				<a href="hello.html" class=directions>Hello</a>
+				<a href="hello.html" class=tablinks>Hello</a>
 			</li>
 			<li>
-				<b><a href="danger.html" class=directions>!DANGER!</a></b>
+				<b><a href="danger.html" class=tablinks>!DANGER!</a></b>
 			</li>
 		</ul>
 		<h1>This is my test Home Page!</h1>
