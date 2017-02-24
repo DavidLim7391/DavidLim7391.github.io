@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>New Page</title>
+	<style>
+		body {
+			font-family:Helvetica;
+		}
+		
+		ul.tab {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			border: 1px solid #ccc;
+			background-color: #f1f1f1;
+		}
+
+		ul.tab li {float: left;}
+
+		ul.tab li a {
+			display: inline-block;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			transition: 0.3s;
+			font-size: 17px;
+		}
+
+		ul.tab li a:hover {background-color: LightGrey;}
+		ul.tab li a:focus, .active {background-color: Orange;}
+
+		.tabcontent {
+			display: none;
+			padding: 6px 12px;
+			border: 1px solid #ccc;
+			border-top: none;
+		}
+		
+		.image {
+			position: relative;
+			width: 100%;
+		}
+		
+		h4 {
+			position: absolute;
+			top:135px;
+			left:0;
+			width: 100%;
+		}
+		
+		h4 span { 
+			color: white; 
+			font: bold 20px Helvetica; 
+			letter-spacing: -1px;  
+			background: rgb(0, 0, 0); /* fallback color */
+			background: rgba(0, 0, 0, 0.7);
+			padding: 10px; 
+		}
+	</style>
+</head>
+<body>
+<ul class="tab">
+	<li><a href="index.html" onclick=index.html>Home</a></li>
+	<li><a href="portfolio.html" class=tablinks>Portfolio</a></li>
+	<li><a href="special.html" class=tablinks>Special</a></li>
+	<li><a href="hello.html" class=tablinks>Hello</a></li>
+	<li><b><a href="danger.html" class=tablinks>!DANGER!</a></b></li>
+	<li><a href="new_page.html" class=tablinks>New Page</a></li>
+</ul>
+
+	<h1>Welcome to My Webpage!</h1>
+	
+	<div class="image">
+		<img src="images/myAvatar.png" height=200 width=200 alt="" />
+		<h4><span>David Lim</span></h4>
+	</div>
+
+</body>
+</html>
